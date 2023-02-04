@@ -1,0 +1,49 @@
+html, body, main, #resultsContainer, #taleContainer {
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+}
+
+main > * {
+    margin: 5px;
+}
+
+#body {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    flex: 1 0 auto;
+}
+
+#results {
+    padding: 15px;
+    background-color: lightblue;
+    grid-column-start: 1;
+    border-right: solid 1px black;
+}
+
+#results > .phrase {
+    margin: 10px;
+    display: inline-block;
+}
+
+#tale {
+    padding: 15px;
+    background-color: lightcyan;
+    grid-column-start: 2;
+}
+
+#tale > .phrase {
+    margin: 5px;
+}
+
+.phrase {
+    border: 1px dotted brown;
+    cursor: pointer;
+}
+
+.faded {
+    opacity: 50%;
+}
